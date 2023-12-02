@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Audio on Button Click</title>
+</head>
+<body>
+    <button id="playButton">Play Audio</button>
+    <audio id="audioPlayer" src="baby.mp3"></audio>
+
+    <script>
+        // Get references to the button and audio elements
+        const playButton = document.getElementById("playButton");
+        const audioPlayer = document.getElementById("audioPlayer");
+
+        // Add a click event listener to the button
+        playButton.addEventListener("click", function () {
+            // Check if the audio is paused or ended
+            if (audioPlayer.paused || audioPlayer.ended) {
+                // Play the audio
+                audioPlayer.play();
+                playButton.textContent = "Pause"; // Change button text to "Pause"
+            } else {
+                // Pause the audio
+                audioPlayer.pause();
+                playButton.textContent = "Play"; // Change button text to "Play"
+            }
+        });
+    </script>
+</body>
+</html>

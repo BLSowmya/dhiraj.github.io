@@ -1,0 +1,48 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh; /* This ensures the body covers the entire viewport height */
+  margin: 0; 
+  background-color: cadetblue;
+  }
+  
+  #bYes{
+    background-color:pink;
+    border-radius:15px;
+    width=50px;
+    height:50px;
+  }
+  
+  #bNo{
+    border-radius:15px;
+    width=50px;
+    height:50px;
+    position: absolute;
+  }
+  
+  body{
+    background-image: url("./hearts.gif");
+    background-size: auto;
+    background-position: center; 
+    
+  }
+  
+  #no{
+    margin-left:990px;
+    
+  }
+  h1{
+    font-family: serif;
+  }
+
+
+
+  /* @keyframes pulse {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}  */
